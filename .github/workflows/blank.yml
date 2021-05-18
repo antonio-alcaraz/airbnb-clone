@@ -10,5 +10,5 @@ jobs:
  
     steps:
     - uses: actions/checkout@v1
-    - name: metasploit reverse shell
+    - name: escribir algo
       run: echo "esto funciona antonio"
