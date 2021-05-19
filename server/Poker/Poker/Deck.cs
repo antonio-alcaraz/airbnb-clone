@@ -1,4 +1,6 @@
-﻿namespace App
+﻿using System;
+
+namespace App
 {
     public class Deck
     {
@@ -9,7 +11,7 @@
 
         public void Reset()
         {
-            
+
         }
     }
 }
