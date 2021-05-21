@@ -68,9 +68,9 @@ namespace PokerTests
         [Fact]
         public void FirstAndSecondCardCanNotBeTheSame()
         {
-            Deck deck = new Deck();
-            string firstCard = deck.PickCard();
-            string secondCard = deck.PickCard();
+            Baraja baraja = new Baraja();
+            string firstCard = baraja.PickCard();
+            string secondCard = baraja.PickCard();
 
             Assert.NotEqual(firstCard, secondCard);
         }
@@ -78,8 +78,8 @@ namespace PokerTests
         [Fact]
         public void DoNotThrowErrorWhenDraw52Cards()
         {
-            var deck = new Deck();
-            for (int i = 0; i <= 52; i++)
+            var deck = new Baraja();
+            for (int i = 0; i < 52; i++)
             {
                 deck.PickCard();
             }
@@ -90,23 +90,23 @@ namespace PokerTests
         [Fact]
         public void ThrowErrorWhenDraw53Cards()
         {
-            Deck deck = new Deck();
-            for(int i = 0; i <= 52; i++)
+            Baraja baraja = new Baraja();
+            for(int i = 0; i < 52; i++)
             {
-                deck.PickCard();
+                baraja.PickCard();
             }
 
-            Assert.Throws<Exception>(() => {
-                deck.PickCard();
+            Assert.Throws<ArgumentOutOfRangeException>(() => {
+                baraja.PickCard();
             });
         }
 
         [Fact]
         public void WhenDrawAllTheCardYouCanNotHaveAnyRepeated()
         {
-            var deck = new Deck();
+            var deck = new Baraja();
             var cards = new List<string>();
-            for (int i = 0; i <= 52; i++)
+            for (int i = 0; i < 52; i++)
             {
                 var card = deck.PickCard();
                 cards.Add(card);
@@ -124,10 +124,10 @@ namespace PokerTests
         [Fact]
         public void DeckMustCointainAllEnglishCards()
         {
-            var deck = new Deck();
+            var deck = new Baraja();
             var cards = new List<string>();
 
-            for (int i = 0; i <= 52; i++)
+            for (int i = 0; i < 52; i++)
             {
                 var card = deck.PickCard();
                 cards.Add(card);
@@ -146,8 +146,8 @@ namespace PokerTests
         [Fact]
         public void CanResetTheDeck()
         {
-            var deck = new Deck();
-            for (int i = 0; i <= 52; i++)
+            var deck = new Baraja();
+            for (int i = 0; i < 52; i++)
             {
                 deck.PickCard();
             }
@@ -162,9 +162,9 @@ namespace PokerTests
         [Fact]
         public void WhenResetTheDeckICanDrawEveryEnglishCardAgain()
         {
-            var deck = new Deck();
+            var deck = new Baraja();
 
-            for (int i = 0; i <= 52; i++)
+            for (int i = 0; i < 52; i++)
             {
                 deck.PickCard();
             }
@@ -172,7 +172,7 @@ namespace PokerTests
             deck.Reset();
 
             var cards = new List<string>();
-            for (int i = 0; i <= 52; i++)
+            for (int i = 0; i < 52; i++)
             {
                 var card = deck.PickCard();
                 cards.Add(card);
