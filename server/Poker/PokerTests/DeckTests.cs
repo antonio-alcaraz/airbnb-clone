@@ -20,7 +20,8 @@ namespace PokerTests
         [Fact]
         public void DoNotThrowErrorWhenDraw52Cards()
         {
-            var deck = new Baraja();
+            var random = new Random(5);
+            var deck = new Baraja(random);
             for (int i = 0; i < 52; i++)
             {
                 deck.PickCard();

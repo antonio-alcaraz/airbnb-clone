@@ -15,7 +15,7 @@ namespace App
             string carta3 = inglesa.PickCard();
             Console.WriteLine(carta3);
             contador++;
-            Baraja inglesa2 = new Baraja(contador);
+            Baraja inglesa2 = new Baraja();
             Console.WriteLine(inglesa.ToString());
         }
 

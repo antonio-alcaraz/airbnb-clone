@@ -7,9 +7,16 @@ namespace App
     public class Baraja
     {
         private List<string> _list;
-        private Random _superRandom = new Random(525);
-        public Baraja(int contador=69)
+        private Random _superRandom;
+        public Baraja(Random random)
         {
+            _superRandom = random;
+            _list = GetAllCards();
+        }
+
+        public Baraja()
+        {
+            _superRandom = new Random();
             _list = GetAllCards();
         }
         public string PickCard()
