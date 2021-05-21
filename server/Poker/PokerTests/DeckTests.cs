@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using App;
 using Xunit;
+using NSubstitute;
 
 namespace PokerTests
 {
@@ -20,7 +21,10 @@ namespace PokerTests
         [Fact]
         public void DoNotThrowErrorWhenDraw52Cards()
         {
-            var random = new Random(5);
+            var random = Substitute.For<Random>();
+            var anyInt = Arg.Any<int>();
+            random.Next(anyInt).Returns(6);
+
             var deck = new Baraja(random);
             for (int i = 0; i < 52; i++)
             {

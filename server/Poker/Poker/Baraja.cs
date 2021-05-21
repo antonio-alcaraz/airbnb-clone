@@ -8,6 +8,7 @@ namespace App
     {
         private List<string> _list;
         private Random _superRandom;
+
         public Baraja(Random random)
         {
             _superRandom = random;
@@ -19,9 +20,10 @@ namespace App
             _superRandom = new Random();
             _list = GetAllCards();
         }
+
         public string PickCard()
         {
-            int next = _superRandom.Next(_list.Count-1);
+            int next = _superRandom.Next(_list.Count - 1);
             string nextCard = _list[next];
             _list.Remove(nextCard);
             return nextCard;
@@ -31,6 +33,7 @@ namespace App
         {
             _list = GetAllCards();
         }
+
         private List<string> GetAllCards() {
             return new List<string> {
                 "AH",
