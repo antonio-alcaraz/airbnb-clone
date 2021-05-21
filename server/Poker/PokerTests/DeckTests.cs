@@ -7,64 +7,6 @@ namespace PokerTests
 {
     public class DeckTests
     {
-        private List<string> GetAllCards() {
-            return new List<string> {
-                "AH",
-                "KH",
-                "QH",
-                "JH",
-                "10H",
-                "9H",
-                "8H",
-                "7H",
-                "6H",
-                "5H",
-                "4H",
-                "3H",
-                "2H",
-                "AC",
-                "KC",
-                "QC",
-                "JC",
-                "10C",
-                "9C",
-                "8C",
-                "7C",
-                "6C",
-                "5C",
-                "4C",
-                "3C",
-                "2C",
-                "AD",
-                "KD",
-                "QD",
-                "JD",
-                "10D",
-                "9D",
-                "8D",
-                "7D",
-                "6D",
-                "5D",
-                "4D",
-                "3D",
-                "2D",
-                "AS",
-                "KS",
-                "QS",
-                "JS",
-                "10S",
-                "9S",
-                "8S",
-                "7S",
-                "6S",
-                "5S",
-                "4S",
-                "3S",
-                "2S",
-
-            };
-        }
-
         [Fact]
         public void FirstAndSecondCardCanNotBeTheSame()
         {
@@ -114,10 +56,9 @@ namespace PokerTests
 
             foreach (string card in cards)
             {
-                var doesExists = cards.Exists(c => c == card);
-                if (doesExists) {
-                    Assert.True(false);
-                }
+                var findings = cards.FindAll(x => x == card);
+                bool hasOnlyOne = findings.Count == 1;
+                Assert.True(hasOnlyOne);
             }
         }
 
@@ -186,6 +127,65 @@ namespace PokerTests
 
             bool isEmpty = allTheCards.Count == 0;
             Assert.True(isEmpty);
+        }
+
+        private List<string> GetAllCards()
+        {
+            return new List<string> {
+                "AH",
+                "KH",
+                "QH",
+                "JH",
+                "10H",
+                "9H",
+                "8H",
+                "7H",
+                "6H",
+                "5H",
+                "4H",
+                "3H",
+                "2H",
+                "AC",
+                "KC",
+                "QC",
+                "JC",
+                "10C",
+                "9C",
+                "8C",
+                "7C",
+                "6C",
+                "5C",
+                "4C",
+                "3C",
+                "2C",
+                "AD",
+                "KD",
+                "QD",
+                "JD",
+                "10D",
+                "9D",
+                "8D",
+                "7D",
+                "6D",
+                "5D",
+                "4D",
+                "3D",
+                "2D",
+                "AS",
+                "KS",
+                "QS",
+                "JS",
+                "10S",
+                "9S",
+                "8S",
+                "7S",
+                "6S",
+                "5S",
+                "4S",
+                "3S",
+                "2S",
+
+            };
         }
     }
 }
