@@ -51,8 +51,8 @@
       <option value="$PROJECT_DIR$/Deck.cs" />
       <option value="$PROJECT_DIR$/Poker/PokerGame.cs" />
       <option value="$PROJECT_DIR$/Poker/Deck.cs" />
-      <option value="$PROJECT_DIR$/Poker/Baraja.cs" />
       <option value="$PROJECT_DIR$/PokerTests/DeckTests.cs" />
+      <option value="$PROJECT_DIR$/Poker/Baraja.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1slf05oPnGV59WKSScOoHaObKUx" />
@@ -118,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1621451873757</updated>
       <workItem from="1621451886708" duration="2529000" />
-      <workItem from="1621624448482" duration="5953000" />
+      <workItem from="1621624448482" duration="6433000" />
     </task>
     <servers />
   </component>
@@ -146,19 +146,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Poker/Baraja.cs</url>
-          <line>19</line>
-          <properties documentPath="C:\Users\Usuario\Documents\GitHub\airbnb-clone\server\Poker\Poker\Deck.cs" initialLine="19" containingFunctionPresentation="method 'PickCard'">
-            <startOffsets>
-              <option value="490" />
-            </startOffsets>
-            <endOffsets>
-              <option value="506" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/PokerTests/DeckTests.cs</url>
           <line>135</line>
           <properties documentPath="C:\Users\Usuario\Documents\GitHub\airbnb-clone\server\Poker\PokerTests\DeckTests.cs" initialLine="135" containingFunctionPresentation="method 'DeckMustCointainAllEnglishCards'">
@@ -170,19 +157,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/PokerTests/DeckTests.cs</url>
-          <line>114</line>
-          <properties documentPath="C:\Users\Usuario\Documents\GitHub\airbnb-clone\server\Poker\PokerTests\DeckTests.cs" initialLine="114" containingFunctionPresentation="method 'WhenDrawAllTheCardYouCanNotHaveAnyRepeated'">
-            <startOffsets>
-              <option value="2609" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2639" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

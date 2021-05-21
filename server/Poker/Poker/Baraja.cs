@@ -22,7 +22,7 @@ namespace App
 
         public void Reset()
         {
-
+            _list = GetAllCards();
         }
         private List<string> GetAllCards() {
             return new List<string> {
