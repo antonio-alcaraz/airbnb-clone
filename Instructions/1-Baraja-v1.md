@@ -1,4 +1,4 @@
-# Clase baraja
+# Baraja v1
 
 ## Instructions
 

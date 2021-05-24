@@ -1,4 +1,4 @@
-# Console Poker for 2 players
+# Poker v1
 
 ## Instructions
 
