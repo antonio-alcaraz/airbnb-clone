@@ -348,4 +348,6 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
-server/Poker/.idea/.idea.Poker/.idea/workspace.xml
+
+# IDE config folders
+server/Poker/.idea/
