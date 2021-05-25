@@ -1,5 +1,7 @@
 # poker-game
 
+[![.NET Core Build with Tests](https://github.com/rescodeio/poker-game/actions/workflows/dotnet-tests.yml/badge.svg)](https://github.com/rescodeio/poker-game/actions/workflows/dotnet-tests.yml)
+
 ## Code Challenges
 
 - Tech
